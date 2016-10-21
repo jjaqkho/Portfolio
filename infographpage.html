@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+    content="width=device-width,
+    initial-scale=1">
+		<title>Word Mapping</title>
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+		<script src="propeller.js"></script>
+		<link href="style.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="Favicon.png"/>
+	</head>
+	<body>
+
+
+	<div class="linkmove menubutton weblayout">
+		<div class="linkmove bar1 weblayout">
+		</div>
+		<div class="linkmove bar2 weblayout">
+		</div>
+		<div class="linkmove bar3 weblayout">
+		</div>
+		<div class="linkmove bar4 weblayout">
+		</div>
+	</div>
+
+	<div class="logo weblayout">
+		<a class="imagelink" href="index.html"><img src='Logo.png' alt='JK' class='JK'></a>
+	</div>
+
+	<a class="BackButtonLink" href="passportpage.html"><img src='BackToTop.png' alt='BackButton'class="linkmove BackButton weblayout"></a>
+
+	<a class="FrontButtonLink" href="appropriationpage.html"><img src='BackToTop.png' alt='FrontButton'class="linkmove FrontButton weblayout"></a>
+
+	<div class="linkmove worktitle weblayout">
+		WORD MAPPING
+	</div>
+
+	<div class="menu weblayout">
+		<div class="about">
+		<a class="aboutlink" href="index.html">About</a>
+		</div>
+		<div class="work">
+		<a class="worklink" href="workpage.html">Works</a>
+		</div>
+		<div class="contact">
+		<a class="contactlink" href="contactpage.html">Contact</a>
+		</div>
+		<div class="resume">
+		<a class="resumelink" href="Kho_CV.pdf">Résumé</a>
+		</div>
+	</div>
+
+	<div class="hairline weblayout">
+	</div>
+
+	<div class="shade weblayout">
+	</div>
+
+	<div class="ipcontainer weblayout">
+			<p class="tjtext">
+			Graphing population and passports
+			</p>
+		</div>
+
+	<div class="tjcontainer2 weblayout">
+		<p class="tjsubtext">Through the use of opacity and positioning, the graph conveys country statistics like demographics, languages, GDP and passport rankings. The list of countries was chosen based on the top 15 countries listed in the <a href="https://www.passportindex.org/index.php" class="passport">Passport Index 2016</a> in terms of passport strength. <br /> <br />
+		Legend: <br />
+		• Order of ring sizes (outer to inner): Passport Index <br />
+		• Order of arc (from 0 degree clockwise onwards): Nominal GDP per capita (high to low) <br />
+		• Main languages used in passports shown in shades.
+		<br /> <br />
+		*Drag to rotate
+			</p>
+	</div>
+
+
+<!--
+	<img src='Works/Type1.png' alt='Type1' class='Type invisibleblock'> -->
+	<div class="OuterCircleDiv weblayout zoomtransition">
+	<img src='Works/InnerCircle.png' alt='InnerCircle' class='OuterCircle'>
+	</div>
+
+	<div class="InnerCircleDiv weblayout zoomtransition">
+	<img src='Works/OuterCircle.png' alt='OuterCircle' class='InnerCircle'>
+</div>
+
+
+
+	<div class="zoomin zoomtransition">
+	+
+	</div>
+
+	<div class="zoomout zoomtransition">
+	-
+	</div>
+	<!-- <img src='Works/Type2.png' alt='Type2' class='Type2 outline'>
+	<img src='Works/Type3.png' alt='Type3' class='Type3'>
+	<img src='Works/Type4.png' alt='Type4' class='Type4 outline'>
+		</div> -->
+
+
+		<!-- <p class="typedescription1 weblayout">
+		Cover showing the legend <br /> <br /> <br /> <br />
+		</p>
+
+		<p class="typedescription2 weblayout">
+			Page 1 showing the beginning <br />
+			 of the journey, with the <br />
+			 black on white text <br />
+			 denoting daylight
+		</p>
+
+		<p class="typedescription3 weblayout">
+			Page 18 showing the arrival<br />
+			 in Vancouver for <br />
+			 a 5 hour layover <br />
+			 <br />
+		</p>
+
+		<p class="typedescription4 weblayout">
+			Page 23 showing journey<br />
+			 over New York City<br />
+		   <br />
+			 <br />
+		</p> -->
+
+
+
+
+
+
+	<img src='BackToTop.png' alt='BackToTop'class="linkmove BackToTop">
+
+	<div class="linkmove BackToTopBox">
+	</div>
+
+<script>
+$('.InnerCircle').propeller({
+	inertia: 0.5,
+	speed: 1
+});
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+    content="width=device-width,
+    initial-scale=1">
+		<title>Type Specimen Sheet</title>
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="Favicon.png"/>
+	</head>
+	<body>
+
+
+	<div class="linkmove menubutton weblayout">
+		<div class="linkmove bar1 weblayout">
+		</div>
+		<div class="linkmove bar2 weblayout">
+		</div>
+		<div class="linkmove bar3 weblayout">
+		</div>
+		<div class="linkmove bar4 weblayout">
+		</div>
+	</div>
+
+	<div class="logo weblayout">
+		<a class="imagelink" href="index.html"><img src='Logo.png' alt='JK' class='JK'></a>
+	</div>
+
+	<a class="BackButtonLink" href="inputoutputpage.html"><img src='BackToTop.png' alt='BackButton'class="linkmove BackButton weblayout"></a>
+
+	<a class="FrontButtonLink" href="oasisdesignpage.html"><img src='BackToTop.png' alt='FrontButton'class="linkmove FrontButton weblayout"></a>
+
+	<div class="linkmove worktitle weblayout">
+		TYPE SPECIMEN SHEET
+	</div>
+
+	<div class="menu weblayout">
+		<div class="about">
+		<a class="aboutlink" href="index.html">About</a>
+		</div>
+		<div class="work">
+		<a class="worklink" href="workpage.html">Works</a>
+		</div>
+		<div class="contact">
+		<a class="contactlink" href="contactpage.html">Contact</a>
+		</div>
+		<div class="resume">
+		<a class="resumelink" href="Kho_CV.pdf">Résumé</a>
+		</div>
+	</div>
+
+	<div class="hairline weblayout">
+	</div>
+
+	<div class="shade weblayout">
+	</div>
+
+
+
+	<div class="wpcontainer weblayout">
+			<p class="tjtext">
+			A showcase of overlapping connections in typography
+			</p>
+		</div>
+
+	<div class="tjcontainer2 weblayout">
+		<p class="tjsubtext">A showcase of relationships between letters in terms of typographic elements through graphic and layering connections between each glyph. The typeface used is Goudy Old Style by Frederic W. Goudy.
+			</p>
+	</div>
+
+
+<!--
+	<img src='Works/Type1.png' alt='Type1' class='Type invisibleblock'> -->
+	<div class="typediv weblayout">
+	<img src='Works/Graph3.png' alt='Graph1' class='Graph3'>
+	<img src='Works/Graph2.png' alt='Graph2' class='Graph2'>
+	<img src='Works/Graph1.png' alt='Graph3' class='Graph1'>
+		</div>
+
+
+		<p class="typedescription1 weblayout">
+		</p>
+
+		<p class="wmdescription2 weblayout">
+			Top right corner, <br />
+			showing Flat Serif, Ascenders,  <br />
+			and Curved Serif <br />
+		</p>
+
+		<p class="wmdescription3 weblayout">
+			Bottom right corner, <br />
+			 showing Apex/Vertex and <br />
+			 Terminal <br />
+		</p>
+
+
+
+
+
+
+	<img src='BackToTop.png' alt='BackToTop'class="linkmove BackToTop">
+
+	<div class="linkmove BackToTopBox">
+	</div>
+
+	<script>
+	var topOfDiv = $(".tjtext").offset().top;
+	var topOfDiv2 = $(".Graph3").offset().top;
+	var topOfDiv3 = $(".Graph2").offset().top;
+	var topOfDiv4 = $(".Graph1").offset().top;
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > topOfDiv) { //scrolled past the other div?
+			$(".typedescription1").addClass("yesopacity"); //reached the desired point -- show div
+			// if (window.pageYOffset > 450)
+			//   $('.typedescription1').addClass('noopacity');
+		} else {
+			$(".typedescription1").removeClass("yesopacity");
+		}
+
+		if ($(window).scrollTop() > topOfDiv2) { //scrolled past the other div?
+			$(".typedescription1").removeClass("yesopacity");
+			$(".wmdescription2").addClass("yesopacity");
+		} else {
+			$(".wmdescription2").removeClass("yesopacity");
+		}
+
+		if ($(window).scrollTop() > topOfDiv3) { //scrolled past the other div?
+			$(".wmdescription2").removeClass("yesopacity");
+			$(".wmdescription3").addClass("yesopacity");
+		} else {
+			$(".wmdescription3").removeClass("yesopacity");
+		}
+
+		if ($(window).scrollTop() > topOfDiv4) { //scrolled past the other div?
+			$(".wmdescription3").removeClass("yesopacity");
+		}
+		// if ($(window).scrollTop() > topOfDiv4) { //scrolled past the other div?
+		// 	$(".typedescription3").removeClass("yesopacity");
+		// 	$(".typedescription4").addClass("yesopacity");
+		// } else {
+		// 	$(".typedescription4").removeClass("yesopacity");
+		// }
+	});
+	</script>
+
+	</body>
+</html>

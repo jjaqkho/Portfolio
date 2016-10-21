@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+    content="width=device-width,
+    initial-scale=1">
+		<title>Redesign 1: Oasis</title>
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="Favicon.png"/>
+	</head>
+	<body>
+
+
+			<div class="linkmove menubutton weblayout">
+				<div class="linkmove bar1 weblayout">
+				</div>
+				<div class="linkmove bar2 weblayout">
+				</div>
+				<div class="linkmove bar3 weblayout">
+				</div>
+				<div class="linkmove bar4 weblayout">
+				</div>
+			</div>
+
+			<div class="logo weblayout">
+				<a class="imagelink" href="index.html"><img src='Logo.png' alt='JK' class='JK'></a>
+			</div>
+
+			<a class="BackButtonLink" href="wordmappage.html"><img src='BackToTop.png' alt='BackButton'class="linkmove BackButton weblayout"></a>
+
+			<a class="FrontButtonLink" href="passportpage.html"><img src='BackToTop.png' alt='FrontButton'class="linkmove FrontButton weblayout"></a>
+
+
+
+			<div class="linkmove worktitle weblayout">
+				REDESIGN 1: OASIS
+			</div>
+
+			<div class="menu weblayout">
+				<div class="about">
+				<a class="aboutlink" href="index.html">About</a>
+				</div>
+				<div class="work">
+				<a class="worklink" href="workpage.html">Works</a>
+				</div>
+				<div class="contact">
+				<a class="contactlink" href="contactpage.html">Contact</a>
+				</div>
+				<div class="resume">
+				<a class="resumelink" href="Kho_CV.pdf">Résumé</a>
+				</div>
+			</div>
+
+			<div class="hairline weblayout">
+			</div>
+
+			<div class="shade weblayout">
+			</div>
+
+
+
+			<div class="oasiscontainertitle weblayout">
+					<p class="tjtext">
+					A rebranding proposal
+					</p>
+				</div>
+
+			<div class="tjcontainer2 weblayout">
+				<p class="tjsubtext">The assignment was to chose a restaurant of our choice and rebrand it. As gentrification takes over Williamsburg, I felt that Oasis was the appropriate choice for a rebranding to better fit in with its new gentrified surroundings.
+					<br /> <br />
+				Given my sufficient knowledge in the Arabic language, I've decided to put myself up for the challenge in giving it a Oasis a logo combining both its English and Arabic name.
+					<br /> <br />
+
+				</p>
+			</div>
+
+
+			<div class="typediv weblayout">
+			<img src='Works/Oasis1.png' alt='Oasis1' class='Oasis1'>
+			<img src='Works/Oasis2.png' alt='Oasis2' class='Oasis2 outline'>
+			<img src='Works/Oasis3.png' alt='Oasis3' class='Oasis3 outline'>
+			<img src='Works/Oasis4.jpeg' alt='Oasis4' class='Oasis4'>
+				</div>
+
+
+				<p class="oasisdescription1 weblayout">
+				Original image of<br />
+				the restaurant<br /> <br />
+				<a href="https://www.google.com.hk/maps/place/Oasis/@40.7177501,-73.9574065,3a,75y/data=!3m8!1e2!3m6!1s-E-3RrAMKoo8%2FUSUaF5EMl4I%2FAAAAAAAAI9Q%2FeOqrl3Yei7Q3f4N1wP6_mScTtKVFyYDUg!2e4!3e12!6s%2F%2Flh4.googleusercontent.com%2F-E-3RrAMKoo8%2FUSUaF5EMl4I%2FAAAAAAAAI9Q%2FeOqrl3Yei7Q3f4N1wP6_mScTtKVFyYDUg%2Fs203-k-no%2F!7i2048!8i1367!4m5!3m4!1s0x89c2595dc5c48767:0x7a5a1b0a3cfeff47!8m2!3d40.7177452!4d-73.9573934!6m1!1e1" target="_blank" class="meet">Image source here</a><br />
+				<br />
+				</p>
+
+				<p class="oasisdescription2 weblayout">
+					 Logo development was based <br />
+					 on the typefaces "Pier Sans" <br />
+					 by Mathieu Desjardins, where <br />
+				   the form imitates the style<br />
+					 of the typeface<br />
+					 <br />
+				</p>
+
+				<p class="oasisdescription3 weblayout">
+					<br />
+					 <br />
+					 <br />
+					 <br />
+				</p>
+
+				<p class="oasisdescription4 weblayout">
+					<br />
+					Variations of the logo and <br />
+					Advertisement mock up<br />
+					 <br />
+					 <br />
+
+				</p>
+
+
+
+
+
+
+
+
+
+
+
+
+				<script>
+				var topOfDiv = $(".tjtext").offset().top;
+				var topOfDiv2 = $(".Oasis1").offset().top;
+				var topOfDiv3 = $(".Oasis2").offset().top;
+				var topOfDiv4 = $(".Oasis3").offset().top;
+				var topOfDiv5 = $(".Oasis4").offset().top;
+				$(window).scroll(function() {
+					if ($(window).scrollTop() > topOfDiv) { //scrolled past the other div?
+						$(".oasisdescription1").addClass("yesopacity"); //reached the desired point -- show div
+						// if (window.pageYOffset > 450)
+						//   $('.typedescription1').addClass('noopacity');
+					} else {
+						$(".oasisdescription1").removeClass("yesopacity");
+					}
+
+					if ($(window).scrollTop() > topOfDiv2) { //scrolled past the other div?
+						$(".oasisdescription1").removeClass("yesopacity");
+						$(".oasisdescription2").addClass("yesopacity");
+					} else {
+						$(".oasisdescription2").removeClass("yesopacity");
+					}
+
+					if ($(window).scrollTop() > topOfDiv3) { //scrolled past the other div?
+						$(".oasisdescription2").removeClass("yesopacity");
+						$(".oasisdescription3").addClass("yesopacity");
+					} else {
+						$(".oasisdescription3").removeClass("yesopacity");
+					}
+
+					if ($(window).scrollTop() > topOfDiv4) { //scrolled past the other div?
+						$(".oasisdescription3").removeClass("yesopacity");
+						$(".oasisdescription4").addClass("yesopacity");
+					} else {
+						$(".oasisdescription4").removeClass("yesopacity");
+					}
+				});
+				</script>
+
+
+
+
+
+
+
+			<img src='BackToTop.png' alt='BackToTop'class="linkmove BackToTop">
+
+			<div class="linkmove BackToTopBox">
+			</div>
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
